@@ -1,0 +1,21 @@
+function [Out] = clown_shear(In, Xshear, Yshear)
+    % Width and Height of Source Image
+    [width,height] =  size(In);
+
+    % preallocate an empty output (for compute speed)
+    Out = zeros(size(In));
+
+    % Image Center - Shear about Pivot
+    piv = [round(width/2), round(height/2)];
+
+    % forward transformation matrix
+    ftm = [ 1, Xshear;
+            Yshear, 1];
+
+    % reverse transformation matrix
+    rtm = inv(ftm);
+
+    
+
+
+end

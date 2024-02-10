@@ -1,0 +1,6 @@
+% bob = clown(20,319);
+
+function [Out] = Rotate(In, Theta)
+    load clown;
+
+end
