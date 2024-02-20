@@ -3,7 +3,7 @@
 Loading an Image into Matlab:
 clown.mat in the Matlab folder - has greyscale values (0-1) of each pixel of the clown
 
-![[clown.jpg]]
+![|][_img/clown.jpg]
 
 Save data into Matlab:
 ``` 
@@ -23,7 +23,7 @@ e.g. the pixel at `clown (20,319)` is `0.1554`
 
 You are required to write a function which rotates a grey scale image by $\theta$ degrees radian
 
-![[rotated.jpg]]
+![][img/rotated.jpg]
 
 Conditions
 - The resulting image should be the same size as the original. (i.e. the matrix storing the image should have the same dimensions, so some clipping of the image may occur).
@@ -33,8 +33,8 @@ Conditions
 ### Forward Mapping
 
 Image rotation can be done with forward mapping:
-![[forward_plot.jpg]]
-![[rotation_eq.jpg]]
+![][_img/forward_plot.jpg]
+![][_img/rotation_eq.jpg]
 
 ### Reverse Mapping
 
@@ -42,7 +42,7 @@ Image rotation can be done with forward mapping:
 > * There are pixels in the destination image with more than one source pixel. 
 > * Some pixels are never written to, leaving the destination image with holes!
 
-![[forward_mapping.jpg]]
+![][_img/forward_mapping.jpg]
 
 To solve this is to start from the destination image's pixels, and calculate a reverse mapping to find which source pixel matches that destination most
 
@@ -51,7 +51,7 @@ To solve this is to start from the destination image's pixels, and calculate a r
 
 You are required to write a function which shears the input image in both the x and y direction and centres the result, as shown in the figure below (using Xshear=0.1, Yshear=0.5).
 
-![[sheared.jpg]]
+![][_img/sheared.jpg]
 
 Conditions:
 - The resulting image should be the same size as the original. (i.e. the matrix storing the image should have the same dimensions, so some clipping of the image may occur).
@@ -64,11 +64,11 @@ Conditions:
 		- (0,height) -> (height/2,0)
 
 Shear Equation: 
-![[shear_plot.jpg]]
+![][_img/shear_plot.jpg]
 
 --- 
 ## Files:
 
-![[clown_shear.m]]
+![][matlab/clown_shear.m]
 
-![[clown_rotate.m]]
+![][matlab/clown_rotate.m]
