@@ -3,7 +3,7 @@
 Loading an Image into Matlab:
 clown.mat in the Matlab folder - has greyscale values (0-1) of each pixel of the clown
 
-![|][_img/clown.jpg]
+![][_img/clown.jpg]
 
 Save data into Matlab:
 ``` 
@@ -23,7 +23,7 @@ e.g. the pixel at `clown (20,319)` is `0.1554`
 
 You are required to write a function which rotates a grey scale image by $\theta$ degrees radian
 
-![][img/rotated.jpg]
+![][_img/rotated.jpg]
 
 Conditions
 - The resulting image should be the same size as the original. (i.e. the matrix storing the image should have the same dimensions, so some clipping of the image may occur).
